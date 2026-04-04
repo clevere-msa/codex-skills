@@ -1,0 +1,4 @@
+interface:
+  display_name: "Using Subagents"
+  short_description: "Delegate work through supervisor/worker subagents"
+  default_prompt: "Plan and execute this task with codex-subagent supervisor/worker workflow, deterministic file I/O, and continuity ledgers."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perl Lint Format"
+  short_description: "Apply Perl::Critic and Perl::Tidy consistently"
+  default_prompt: "Lint and format Perl code using project standards, then report actionable fixes."

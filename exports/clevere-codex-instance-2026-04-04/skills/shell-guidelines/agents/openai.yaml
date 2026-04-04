@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shell Guidelines"
+  short_description: "Write safe, idempotent shell scripts"
+  default_prompt: "Apply shell safety, idempotency, testing, and CLI contract conventions to this script change."

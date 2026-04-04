@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unit Package Release"
+  short_description: "Create release archives for systemd unit distribution"
+  default_prompt: "Package .service/.timer files into a versioned archive with manifest and checksums for handoff."

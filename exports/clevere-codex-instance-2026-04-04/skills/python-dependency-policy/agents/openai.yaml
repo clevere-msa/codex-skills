@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Dependency Policy"
+  short_description: "Make safe Python dependency decisions"
+  default_prompt: "Evaluate this Python dependency proposal for necessity, compatibility, maintenance risk, and rollout impact."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perl Module Workflow"
+  short_description: "Develop and refactor Perl modules safely"
+  default_prompt: "Implement or refactor a Perl module with strict/warnings, clean interfaces, and maintainable structure."

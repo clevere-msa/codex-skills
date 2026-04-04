@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture and Interfaces"
+  short_description: "Protect architecture and interface contracts during change"
+  default_prompt: "Assess this change for architecture constraints, interface compatibility, error handling, and blast-radius risk before implementation."

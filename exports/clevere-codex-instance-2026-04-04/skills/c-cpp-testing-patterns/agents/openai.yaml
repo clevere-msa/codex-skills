@@ -1,0 +1,4 @@
+interface:
+  display_name: "C Cpp Testing Patterns"
+  short_description: "Validate native changes with focused tests"
+  default_prompt: "Add or run C/C++ tests to verify this change, then report pass/fail evidence and residual risk."

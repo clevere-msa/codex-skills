@@ -1,0 +1,4 @@
+interface:
+  display_name: "MSA Apache Restart"
+  short_description: "Restart MSA Apache with validation checks"
+  default_prompt: "Perform an MSA Apache restart workflow with pre-checks, bounce-apache execution, and post-restart verification evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perl CGI Auth Debug"
+  short_description: "Debug Perl CGI authentication and session issues"
+  default_prompt: "Trace Perl CGI login/auth/session failures and produce root-cause evidence with fixes."

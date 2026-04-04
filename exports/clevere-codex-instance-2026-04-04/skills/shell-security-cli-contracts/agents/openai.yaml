@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shell Security CLI Contracts"
+  short_description: "Harden shell security and CLI behavior"
+  default_prompt: "Review this shell interface for argument safety, injection risk, exit-code contracts, and secret-safe logging."

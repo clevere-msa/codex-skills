@@ -1,0 +1,4 @@
+interface:
+  display_name: "MCP Operations"
+  short_description: "Operate MCP servers and tools safely"
+  default_prompt: "Follow MCP runtime and startup rules to diagnose, run, and troubleshoot MCP servers/tools with minimal operational risk."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Security Basics"
+  short_description: "Harden Python input and secrets safety"
+  default_prompt: "Review this Python change for input validation, insecure execution patterns, and sensitive-data exposure risks."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perl Guidelines"
+  short_description: "Apply Perl coding, testing, and security standards"
+  default_prompt: "Apply Perl project conventions, testing patterns, dependency policy, taint/security guidance, and logging standards to this change."

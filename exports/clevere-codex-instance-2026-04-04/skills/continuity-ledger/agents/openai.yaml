@@ -1,0 +1,4 @@
+interface:
+  display_name: "Continuity Ledger"
+  short_description: "Track durable cross-session work state"
+  default_prompt: "Update or consult the continuity ledger with current goals, decisions, constraints, and execution outcomes for this workspace."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Core Governance"
+  short_description: "Enforce global safety and scope guardrails"
+  default_prompt: "Apply core governance rules for safety, scope control, secrets handling, dependency discipline, and risk mitigation to this task."

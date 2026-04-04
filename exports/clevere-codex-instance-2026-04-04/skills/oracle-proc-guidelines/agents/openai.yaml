@@ -1,0 +1,4 @@
+interface:
+  display_name: "Oracle Pro C Guidelines"
+  short_description: "Apply safe Pro*C SQL/C integration rules"
+  default_prompt: "Review this Pro*C change for host variable safety, embedded SQL correctness, and precompiler/runtime compatibility."

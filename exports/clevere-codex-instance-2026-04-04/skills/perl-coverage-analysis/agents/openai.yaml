@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perl Coverage Analysis"
+  short_description: "Analyze Perl test coverage and identify gaps"
+  default_prompt: "Run or inspect Perl coverage data and identify highest-priority untested paths."

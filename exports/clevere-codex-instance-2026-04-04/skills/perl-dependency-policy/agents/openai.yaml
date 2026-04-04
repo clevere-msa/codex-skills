@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perl Dependency Policy"
+  short_description: "Make safe Perl dependency decisions"
+  default_prompt: "Evaluate this Perl dependency change and provide a policy-based decision with implementation and testing impacts."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perl Logging Observability"
+  short_description: "Improve Perl logs without leaking secrets"
+  default_prompt: "Review and improve Perl logging/error reporting for debuggability, consistency, and sensitive-data safety."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perl Test and Prove"
+  short_description: "Write and run Perl tests with prove"
+  default_prompt: "Create or update Perl tests and run prove to diagnose and fix failures."

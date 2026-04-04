@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cover DB Parser"
+  short_description: "Parse Devel::Cover coverage DBs quickly."
+  default_prompt: "Use $cover-db-parser to extract statement/branch coverage from a Devel::Cover cover_db."

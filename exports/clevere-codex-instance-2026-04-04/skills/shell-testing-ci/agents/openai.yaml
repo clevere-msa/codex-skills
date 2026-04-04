@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shell Testing CI"
+  short_description: "Validate shell scripts with test evidence"
+  default_prompt: "Run shell syntax/lint/runtime checks and summarize failures with reproducible commands and fixes."

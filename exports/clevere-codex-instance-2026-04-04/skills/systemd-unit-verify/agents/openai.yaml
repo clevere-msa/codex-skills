@@ -1,0 +1,4 @@
+interface:
+  display_name: "Systemd Unit Verify"
+  short_description: "Verify changed systemd units and report actionable errors"
+  default_prompt: "Validate modified .service and .timer files with systemd-analyze verify and summarize failures with fixes."

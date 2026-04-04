@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Guidelines"
+  short_description: "Apply Python coding and quality standards"
+  default_prompt: "Apply Python conventions, testing expectations, dependency policy, and security practices to this implementation."

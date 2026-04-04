@@ -1,0 +1,4 @@
+interface:
+  display_name: "C Cpp Code Conventions"
+  short_description: "Apply maintainable C/C++ coding standards"
+  default_prompt: "Apply repository C/C++ code conventions and interface-discipline to this native code change."

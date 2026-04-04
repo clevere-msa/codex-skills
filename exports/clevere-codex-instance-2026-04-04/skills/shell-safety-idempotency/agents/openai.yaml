@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shell Safety Idempotency"
+  short_description: "Make shell automation safe and rerunnable"
+  default_prompt: "Review this shell change for strict-mode safety, idempotency, error handling, and safe retry behavior."

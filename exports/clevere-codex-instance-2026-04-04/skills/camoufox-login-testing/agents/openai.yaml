@@ -1,0 +1,4 @@
+interface:
+  display_name: "Camoufox Login Testing"
+  short_description: "Headless Camoufox login testing guide"
+  default_prompt: "Use $camoufox-login-testing to run headless Camoufox checks on a secured login flow."

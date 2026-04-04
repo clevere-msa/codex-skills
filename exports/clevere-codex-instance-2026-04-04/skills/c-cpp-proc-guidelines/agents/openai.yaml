@@ -1,0 +1,4 @@
+interface:
+  display_name: "C/C++/Pro*C Guidelines"
+  short_description: "Apply C, C++, and Pro*C project conventions"
+  default_prompt: "Apply repository C/C++/Pro*C conventions, build/test expectations, and safe refactor patterns to this change."

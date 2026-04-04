@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow and Planning"
+  short_description: "Plan work and keep diffs reviewable"
+  default_prompt: "Run structured repo intake and planning, then execute with clean diff hygiene, decision logging, and release-readiness checks."

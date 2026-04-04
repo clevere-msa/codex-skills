@@ -1,0 +1,4 @@
+interface:
+  display_name: "C Cpp Build Debug"
+  short_description: "Diagnose C/C++ compile, link, and runtime failures"
+  default_prompt: "Investigate this C/C++ build or runtime issue with a staged compile-link-debug workflow and concrete evidence."

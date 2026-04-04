@@ -1,0 +1,4 @@
+interface:
+  display_name: "MSA Log Reader"
+  short_description: "Locate and analyze MSA app/server logs"
+  default_prompt: "Find the correct MSA logs for this CGI or batch issue, extract minimal error context, and summarize root-cause evidence."

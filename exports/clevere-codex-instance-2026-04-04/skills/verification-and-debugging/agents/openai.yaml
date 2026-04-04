@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verification and Debugging"
+  short_description: "Debug systematically and validate with evidence"
+  default_prompt: "Use a structured debugging and verification workflow with strong evidence, CI alignment, and confidence reporting."

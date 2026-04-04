@@ -1,0 +1,4 @@
+interface:
+  display_name: "Python Testing Quality Gates"
+  short_description: "Validate Python changes with tests and gates"
+  default_prompt: "Add or run Python tests and repository quality gates, then summarize failures and risk."

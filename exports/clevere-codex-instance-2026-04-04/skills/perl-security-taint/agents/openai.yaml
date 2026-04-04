@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perl Security Taint"
+  short_description: "Harden Perl input and taint safety"
+  default_prompt: "Review this Perl change for input validation, taint handling, command execution safety, and secret exposure risks."
