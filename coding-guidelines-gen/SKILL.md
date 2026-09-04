@@ -1,6 +1,6 @@
 ---
 name: coding-guidelines-gen
-description: Generate nested AGENTS.md coding guidelines per module (monorepo-aware), detect languages/tooling, ask architecture preferences, and set up missing formatters/linters (Spotless for JVM). Use when the user wants module-scoped AGENTS.md coding guidelines or to set up missing formatters/linters.
+description: "Nested coding guidance: generate scoped AGENTS.md, detect tooling, and add missing formatter/linter setup."
 ---
 
 # Coding guidelines generator
@@ -16,6 +16,7 @@ Create **nested** `AGENTS.md` files (not repo root) that define:
 - Architecture style: layered / hex / clean (pick one) and any hard boundaries (e.g., `domain/` must not import `infra/`).
 - OK to add tooling when missing? (default: yes; Spotless for Java/Kotlin)
 - Default commands: format / lint / test for each module (changed-files-first where practical).
+- For MSA repos, whether `.ai-guidelines/` is already present; if it is not, point generated guidance at `$HOME/ai_guardrails` rather than copying shared guardrails.
 
 ## Workflow (monorepo-aware)
 1) Scan for candidate modules and languages.
@@ -25,6 +26,7 @@ Create **nested** `AGENTS.md` files (not repo root) that define:
    - If the only detected module is repo root, suggest a subdir (e.g., `src/`, `apps/<name>/`, `packages/<name>/`) or ask the user where the code “starts”.
 3) For each confirmed module root:
    - Create/update `<module>/AGENTS.md` using `references/agents-template.md`.
+   - For MSA repos, include a concise shared-guardrails pointer before module-specific commands.
    - Fill the `codex-guidelines` JSON block (schema: `references/verifiable-block.md`) with runnable commands.
 4) Ensure formatting + linting exist (prefer existing; otherwise add best-practice defaults).
    - JVM (Gradle/Maven): add/configure Spotless (see `references/spotless.md`).

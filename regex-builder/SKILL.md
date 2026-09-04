@@ -1,6 +1,6 @@
 ---
 name: regex-builder
-description: Build, test, and explain regular expressions against sample text or files using CLI tools (rg, python) and specific regex flavors. Use when asked to craft, debug, or validate regexes or search patterns.
+description: "Regex/search patterns: build, test, and explain target-flavor expressions against samples or files."
 ---
 # Regex builder
 

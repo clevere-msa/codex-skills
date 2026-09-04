@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Pull Request"
+  short_description: "Open a controlled, review-ready pull request"
+  default_prompt: "Use $create-pr to open a focused pull request with current evidence and eligible review routing."

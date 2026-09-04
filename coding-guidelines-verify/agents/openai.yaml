@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify Coding Guidelines"
+  short_description: "Verify changes and emit reusable evidence"
+  default_prompt: "Use $coding-guidelines-verify to check changed files and emit current JSON evidence and a review packet."

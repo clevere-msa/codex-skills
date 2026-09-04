@@ -1,6 +1,6 @@
 ---
 name: dependency-upgrader
-description: "Upgrade dependencies for Java/Kotlin (Gradle/Maven) and TypeScript/Node projects with minimal risk: plan the bump, apply changes incrementally, run tests/builds, and document breaking changes. Use when the user asks to bump deps, update frameworks, or address CVEs."
+description: "JVM/Node dependency upgrades: bump incrementally; handle breaking changes; verify build, tests, and lockfiles."
 ---
 
 # Dependency upgrader
@@ -37,7 +37,7 @@ Safely upgrade dependencies with minimal, reviewable diffs and clear verificatio
 4) Apply upgrades incrementally
    - Update one group at a time; keep diffs focused.
    - After each group: run tests/build and fix breakages immediately.
-   - Use the playbooks in `references/` for ecosystem-specific commands.
+   - Use `references/gradle-upgrade-playbook.md` or `references/node-upgrade-playbook.md` for ecosystem-specific commands.
 5) Validate and document
    - Run the repo's "CI equivalent" commands (tests + build).
    - Document:

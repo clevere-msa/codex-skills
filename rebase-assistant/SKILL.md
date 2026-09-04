@@ -1,6 +1,6 @@
 ---
 name: rebase-assistant
-description: Guide a safe git rebase of the current branch onto a target branch, including conflict triage and resolution steps. Use when asked to rebase, update a branch, or resolve rebase conflicts.
+description: "Git rebases: update refs, resolve conflicts safely, and verify rewritten branch history."
 ---
 # Rebase assistant
 

@@ -5,6 +5,10 @@ Use this as a starting point for each **module root**.
 ```markdown
 # Agent instructions (scope: <module-relative-path>)
 
+## Shared guardrails
+- For MSA repos, read the repo-local `.ai-guidelines/system-prompt.md` when present. Until adopted, read `$HOME/ai_guardrails/guidelines/core/system-prompt.md`.
+- For AWS/Terraform work, also read `$HOME/ai_guardrails/guidelines/overlays/aws-terraform/`.
+
 ## Scope
 - Applies to: `<module-relative-path>` and subdirectories
 - Languages/tooling: <detected>

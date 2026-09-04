@@ -1,6 +1,6 @@
 ---
 name: agents-md
-description: Create or update root and nested AGENTS.md files that document scoped conventions, monorepo module maps, cross-domain workflows, and (optionally) per-module feature maps (feature -> paths, entrypoints, tests, docs). Use when the user asks for AGENTS.md, nested agent instructions, or a module/feature map.
+description: "AGENTS.md: define scoped guidance, module maps, cross-domain workflows, and feature ownership."
 ---
 
 # AGENTS.md builder
@@ -20,6 +20,7 @@ Optimize for concise and precise instructions (short bullets, minimal prose). Li
 - If you want feature maps: top 5-15 user-facing features (names) and which module owns them.
 - Any rules about MCP usage to capture in root AGENTS.md (allowed servers/tools, safety constraints).
 - Any hard rules (do not touch X, required commands, style rules).
+- For MSA repos, whether the repo already has `.ai-guidelines/`; if not, include a concise pointer to `$HOME/ai_guardrails` instead of copying the shared guardrails.
 
 ## Where to put AGENTS.md (heuristics)
 Create AGENTS.md at:
@@ -40,6 +41,7 @@ Avoid placing AGENTS.md too deep unless there is a real boundary; too many files
    - Docs: do not open/read `docs/` by default; consult only when asked or required.
    - Add cross-domain workflows (how modules connect): frontend <-> backend API, auth/session, contract location (OpenAPI/GraphQL), "run together" local dev.
    - Add cross-repo verification guidance: where to run per module + prereqs; quiet first run; re-run narrowed failures with verbose logs when debugging.
+   - For MSA repos, add a short shared-guardrails section that points to `.ai-guidelines/system-prompt.md` when present, or `$HOME/ai_guardrails/guidelines/core/system-prompt.md` until adoption.
 3) Draft nested AGENTS.md per component
    - Put tech-specific instructions in the module that owns them:
      - Backend: how to run, test, migrate DB; key modules and entrypoints.

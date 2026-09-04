@@ -1,6 +1,6 @@
 ---
 name: ci-fix
-description: "Fix GitHub Actions CI failures using GitHub CLI (gh): inspect runs/logs, identify root cause, patch workflows/code, rerun jobs, and summarize verification. Use when GitHub Actions CI is failing or needs diagnosis."
+description: "GitHub Actions failures: inspect runs/logs, find root causes, patch CI, rerun, and verify."
 ---
 
 # CI fix (GitHub Actions)
@@ -49,6 +49,21 @@ description: "Fix GitHub Actions CI failures using GitHub CLI (gh): inspect runs
 ## Safety notes
 - Avoid `pull_request_target` (and any change that runs untrusted fork code with secrets) unless the user explicitly requests it and understands the security tradeoffs.
 - Keep workflow `permissions:` least-privilege; don’t broaden token access “just to make it pass”.
+- **A check that silently skips is worse than one that fails.** `actions/checkout` shallow-clones by
+  default (`fetch-depth: 1` as of v4 — see the [action's documented inputs](https://github.com/actions/checkout#usage),
+  and re-check them, since vendor defaults change), so any step that diffs against a base ref finds
+  no merge base and can no-op while still reporting success — a green gate enforcing nothing. When a
+  check compares to a base branch, set `fetch-depth: 0`, fetch the base ref explicitly, and make an
+  unavailable base a hard failure rather than a skip:
+  ```yaml
+  - uses: actions/checkout@v4
+    with:
+      fetch-depth: 0
+  - if: github.event_name == 'pull_request'
+    run: git fetch --no-tags origin "${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}"
+  ```
+  When you add a gate, prove it fails: run it against input that should break it. A check nobody has
+  seen fail is an untested check.
 
 ## Deliverable (paste in chat / PR)
 - **Summary:** ...

@@ -1,6 +1,6 @@
 ---
 name: bug-triage
-description: Reproduce, isolate, and fix a bug (or failing build/test), then summarize root cause, fix, and verification steps. Use when the user reports a bug, regression, or failing build/test and wants a fix.
+description: "Bug triage: reproduce, isolate, fix, and verify regressions, failing tests, or broken builds."
 ---
 
 # Bug triage

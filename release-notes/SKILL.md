@@ -1,6 +1,6 @@
 ---
 name: release-notes
-description: Draft release notes and changelog entries from git history or merged PRs between two refs (tags/SHAs/branches), including breaking changes, migrations, and upgrade steps. Use when the user asks for release notes, changelog updates, or a GitHub Release draft.
+description: "Release notes/changelogs: summarize commits and PRs between refs, including breaking changes and upgrades."
 ---
 
 # Release notes
@@ -43,4 +43,3 @@ Produce accurate, scannable release notes (Markdown) for a specific release rang
 Provide:
 - Release notes Markdown (ready to paste into a GitHub Release / changelog).
 - A short "Risk/notes" section listing any required migrations, config changes, or rollback concerns.
-

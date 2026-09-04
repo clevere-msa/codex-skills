@@ -1,6 +1,6 @@
 ---
 name: plan-work
-description: "Plan work before coding: do repo research, analyze options/risks, and ask clarifying questions before proposing an implementation plan. Use when the user asks for a plan, design/approach, scope breakdown, or implementation steps."
+description: "Implementation planning: research the repo; resolve scope, options, risks, questions, and verification steps."
 ---
 
 # Plan work

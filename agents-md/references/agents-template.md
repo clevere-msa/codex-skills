@@ -12,6 +12,11 @@ Use this at repo root when you have multiple subprojects/modules.
 - **Key directories:**
   - ...
 
+## Shared guardrails
+- For MSA repos, read `.ai-guidelines/system-prompt.md` when present. Until the repo adopts `.ai-guidelines`, read `$HOME/ai_guardrails/guidelines/core/system-prompt.md`.
+- For AWS/Terraform work, also read the AWS/Terraform overlay under `$HOME/ai_guardrails/guidelines/overlays/aws-terraform/`.
+- Keep repo-specific rules here concise; do not copy the full shared guardrail body.
+
 ## Modules / subprojects
 Use `references/module-map-format.md` for the table format.
 

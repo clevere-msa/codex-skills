@@ -1,6 +1,6 @@
 ---
 name: docs-sync
-description: Keep documentation in sync with code changes across README, docs sites, API docs, runbooks, and configuration. Use when the user asks to update docs, ensure docs match behavior, or prepare docs for a release/PR.
+description: "Documentation drift: align README, site, API, runbook, and config docs with code and release state."
 ---
 
 # Docs sync
@@ -23,6 +23,7 @@ Update documentation so it matches the current code and is easy for the target a
    - For Spring: check for generated OpenAPI/Swagger docs or endpoint annotations.
    - For Next/TypeScript: check for docs pages, Storybook, or typed API clients.
    - If your repo uses `docs/` as the primary doc root, see `references/docs-structure.md` for a suggested layout.
+   - For detailed docs triage, use `references/doc-update-checklist.md`.
 3) Decide what needs updating
    - Ensure docs cover:
      - setup and local dev commands
@@ -31,6 +32,7 @@ Update documentation so it matches the current code and is easy for the target a
      - DB migrations and operational steps
      - behavior changes visible to users
    - If the change is an architectural/behavioral decision, add or update an ADR (use `references/adr-template.md`).
+   - For reusable wording/patterns, use `references/doc-snippets.md`.
 4) Apply edits with minimal churn
    - Prefer small, targeted edits over rewrites.
    - Add examples that are copy/paste runnable.

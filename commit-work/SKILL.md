@@ -1,6 +1,6 @@
 ---
 name: commit-work
-description: "Create high-quality git commits: review/stage intended changes, split into logical commits, and write clear commit messages (including Conventional Commits). Use when the user asks to commit, craft a commit message, stage changes, or split work into multiple commits."
+description: "Git commits: inspect, stage, split, message, and verify focused Conventional Commits."
 ---
 
 # Commit work
@@ -15,6 +15,35 @@ Make commits that are easy to review and safe to ship:
 - Single commit or multiple commits? (If unsure: default to multiple small commits when there are unrelated changes.)
 - Commit style: Conventional Commits are required.
 - Any rules: max subject length, required scopes.
+
+## MSA authorization and provenance
+
+First discover the repository's GitHub owner type, for example with
+`gh repo view --json nameWithOwner,owner`. In an MSA-governed repository:
+
+- If GitHub reports the owner type as `Organization`, require an approved Jira
+  work item and include `Change-Ticket:`.
+- If GitHub reports the owner type as `User`, Jira is optional traceability;
+  do not require a ticket or `Change-Ticket:`.
+- Ask the user only when ownership cannot be discovered.
+
+Always require the session identity supplied by the Codex `SessionStart` hook.
+Stop if the session or model is missing. Organization-owned MSA commits use all
+four trailers:
+
+```text
+Change-Ticket: <KEY>
+AI-Assisted-By: Codex/<model> (<session>)
+Agent-Session: <session>
+Agent-Model: <model>
+```
+
+Keep the ticket key bare in `Change-Ticket:` for automated evidence checks. If
+the commit body names the ticket, link it to its Jira URL there.
+
+Personal-repository commits omit `Change-Ticket:` unless the user explicitly
+chooses to retain it as optional traceability. They still use the three AI
+provenance trailers with the values announced in the session banner.
 
 ## Workflow (checklist)
 1) Inspect the working tree before staging
@@ -48,6 +77,7 @@ Make commits that are easy to review and safe to ship:
      - blank line
      - body (what/why, not implementation diary)
      - footer (BREAKING CHANGE) if needed
+   - If type choice is unclear, use `references/conventional-commit-types.md`.
    - Prefer an editor for multi-line messages: `git commit -v`
    - Use `references/commit-message-template.md` if helpful.
 7) Run the smallest relevant verification

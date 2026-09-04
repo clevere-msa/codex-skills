@@ -1,6 +1,17 @@
 # Compliance report template
 
-- **Mode:** changed-files (default) | all-files
+When `--review-packet` is used, render these headings in order:
+
+1. Outcome
+2. Acceptance evidence
+3. Validation
+4. Control path
+5. Risks/rollback
+6. Remaining blockers
+
+The console summary remains:
+
+- **Mode:** changed-files (default) | commit-range (`--base-ref`) | all-files
 - **Auto-fix formatting:** yes | no
 - **Scopes checked:** <count>
 - **Result:** pass | fail
@@ -17,4 +28,3 @@ If failing:
 - Missing/invalid `codex-guidelines` blocks: <paths>
 - Command failures: <what + where>
 - Rule violations: <what + where>
-

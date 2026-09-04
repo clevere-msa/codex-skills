@@ -1,6 +1,6 @@
 ---
 name: branch-cleaner
-description: Identify and clean up stale git branches locally and on remotes with safe, reversible steps. Use when asked to prune, list, or delete merged/old branches or audit branch hygiene.
+description: "Git branch cleanup: audit/list/prune stale local or remote branches with approval and reversible safeguards."
 ---
 # Branch cleaner
 
